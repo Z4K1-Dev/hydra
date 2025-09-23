@@ -1,0 +1,15 @@
+'use client';
+
+import { useEffect } from 'react';
+import { usePlugins } from '@/lib/plugin-manager';
+
+export function PluginLoader() {
+  usePlugins();
+
+  useEffect(() => {
+    // Initialize plugin system
+    console.log('Plugin system initialized');
+  }, []);
+
+  return null;
+}
