@@ -1,8 +1,8 @@
-# ZadPress - Development Plan
+# Hydra Platform - Development Plan
 
 ## Project Overview
 
-ZadPress adalah platform website builder berbasis SaaS dengan fokus SEO, menggunakan arsitektur multi-tenant dan sistem plugin modular. Platform ini memungkinkan pengguna untuk membuat website yang dioptimalkan SEO dengan memilih plugin yang sesuai kebutuhan mereka.
+Hydra Platform adalah platform website builder berbasis SaaS dengan fokus Modular Architecture, menggunakan arsitektur multi-tenant dan sistem plugin modular. Platform ini memungkinkan pengguna untuk membuat website dengan memilih plugin yang sesuai kebutuhan mereka.
 
 ## Tech Stack
 
@@ -38,10 +38,9 @@ ZadPress adalah platform website builder berbasis SaaS dengan fokus SEO, menggun
 - **Resource quota management** per tenant
 
 ### 2. Plugin System
-- **WordPress-like hooks system** (actions & filters)
-- **SEO-focused hook definitions**
+- **hooks system** (actions & filters)
 - **Priority system** untuk eksekusi terkontrol
-- **Dynamic plugin loading** berdasarkan konfigurasi user
+- **Dynamic plugin loading** berdasarkan konfigurasi prioritas
 
 ### 3. Component System
 - **Modular components** untuk website builder
@@ -142,7 +141,7 @@ tenant_plugins (id, tenant_id, plugin_id, is_active, settings, installed_at, upd
 - [ ] Create page preview functionality
 
 ### Phase 3: Advanced Features (Day 4)
-**Goal: Implement plugin system and SEO features**
+**Goal: Implement plugin system**
 
 #### 3.1 Plugin System Architecture
 - [ ] Create hook system implementation
@@ -2219,6 +2218,6 @@ export const batchOps = new BatchOperations();
 
 ## Conclusion
 
-ZadPress aims to become the leading SEO-focused website builder platform with a modular plugin system. The architecture is designed for scalability, security, and performance while maintaining flexibility for future enhancements. The development plan focuses on delivering a minimum viable product quickly while building a solid foundation for future growth.
+Hydra Platform aims to become the leading website builder platform with a modular plugin system. The architecture is designed for scalability, security, and performance while maintaining flexibility for future enhancements. The development plan focuses on delivering a minimum viable product quickly while building a solid foundation for future growth.
 
-The combination of modern technologies (Next.js, tRPC, Prisma) with a business model focused on SEO optimization and white-label opportunities positions ZadPress for success in the competitive website builder market.
+The combination of modern technologies (Next.js, tRPC, Prisma) with a business model and white-label opportunities positions Hydra Platform for success in the competitive website builder market.

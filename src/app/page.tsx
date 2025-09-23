@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Settings, BarChart3, Search, MapPin, Tag, FileText } from 'lucide-react';
+import { BarChart3, FileText, MapPin, Search, Settings, Tag } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Home() {
   const [loadedPlugins, setLoadedPlugins] = useState<string[]>([
@@ -76,7 +76,7 @@ export default function Home() {
 
       <div className="w-full max-w-4xl space-y-6">
         <div className="text-center space-y-2">
-          <h1 className="text-4xl font-bold">SEO Plugin System</h1>
+          <h1 className="text-4xl font-bold">Modular Plugin System</h1>
           <p className="text-lg text-muted-foreground">
             Modular SEO and analytics plugins for your Next.js application
           </p>
@@ -94,7 +94,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Plugin System Features</CardTitle>
                 <CardDescription>
-                  Our modular plugin system allows you to enable/disable SEO features as needed
+                  Our modular plugin system allows you to enable/disable Module features as needed
                 </CardDescription>
               </CardHeader>
               <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">

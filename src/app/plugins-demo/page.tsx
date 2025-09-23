@@ -7,7 +7,7 @@ export default function PluginsDemoPage() {
             🚀 Plugin System Demo
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Interactive demo of our advanced SEO plugin architecture
+            Interactive demo of our Modular plugin architecture
           </p>
           <div className="mt-4">
             <a href="/" className="text-blue-600 hover:text-blue-800 underline">

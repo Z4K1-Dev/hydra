@@ -29,9 +29,8 @@
 
 1. **Scalability Issues**: Plugin system lama tidak bisa scale untuk multi-tenant SaaS architecture
 2. **Plugin Coupling**: Plugin terlalu tightly coupled, sulit untuk maintenance
-3. **Event-Driven Nature**: SEO operations本质上 adalah event-driven, bukan procedural
-4. **WordPress-like Flexibility**: Kita ingin fleksibilitas WordPress tapi tanpa copy-paste code mereka
-5. **Type Safety**: TypeScript support yang lebih baik untuk plugin development
+3. **Event-Driven Nature**: SEO operations adalah event-driven, bukan procedural
+4. **Type Safety**: TypeScript support yang lebih baik untuk plugin development
 
 ### What We're Building
 
@@ -1523,11 +1522,10 @@ Ini adalah dokumentasi komprehensif tentang migrasi dari simple plugin system ke
 
 ### Lessons Learned:
 
-1. **Don't copy WordPress** - Pelajari konsepnya tapi buat implementasi yang lebih baik
-2. **Type Safety first** - TypeScript bukan optional requirement
-3. **Event-driven thinking** - Ubah mindset dari procedural ke event-driven
-4. **Performance matters** - Optimasi dari awal, bukan setelah terlambat
-5. **Testing is mandatory** - Comprehensive testing untuk complex system
+1. **Type Safety first** - TypeScript bukan optional requirement
+2. **Event-driven thinking** - Ubah mindset dari procedural ke event-driven
+3. **Performance matters** - Optimasi dari awal, bukan setelah terlambat
+4. **Testing is mandatory** - Comprehensive testing untuk complex system
 
 ### Final Thoughts:
 
