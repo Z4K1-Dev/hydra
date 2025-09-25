@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { BarChart3, FileText, MapPin, Search, Settings, Tag } from 'lucide-react';
+import { BarChart3, FileText, MapPin, Search, Settings, Tag, Code } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Home() {
@@ -83,9 +83,10 @@ export default function Home() {
         </div>
 
         <Tabs defaultValue="overview" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
+          <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="plugins">Active Plugins</TabsTrigger>
+            <TabsTrigger value="ai-tools">AI Tools</TabsTrigger>
             <TabsTrigger value="admin">Admin Panel</TabsTrigger>
           </TabsList>
 
@@ -148,6 +149,66 @@ export default function Home() {
                 </Card>
               ))}
             </div>
+          </TabsContent>
+
+          <TabsContent value="ai-tools" className="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle>AI-Powered Development Tools</CardTitle>
+                <CardDescription>
+                  Leverage artificial intelligence to accelerate your development workflow
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <Card className="cursor-pointer hover:bg-muted/50 transition-colors">
+                    <CardHeader className="pb-3">
+                      <div className="flex items-center space-x-2">
+                        <Code className="h-5 w-5 text-primary" />
+                        <CardTitle className="text-lg">AI Code Generator</CardTitle>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Generate high-quality code using AI powered by Z-AI. Support for multiple programming languages with intelligent code completion.
+                      </p>
+                      <Button asChild className="w-full">
+                        <a href="/code-generator">
+                          <Code className="mr-2 h-4 w-4" />
+                          Try Code Generator
+                        </a>
+                      </Button>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="cursor-pointer hover:bg-muted/50 transition-colors">
+                    <CardHeader className="pb-3">
+                      <div className="flex items-center space-x-2">
+                        <Search className="h-5 w-5 text-primary" />
+                        <CardTitle className="text-lg">AI Assistant</CardTitle>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Get intelligent answers to your development questions. Debug code, optimize performance, and learn best practices.
+                      </p>
+                      <Button variant="outline" className="w-full" disabled>
+                        <Search className="mr-2 h-4 w-4" />
+                        Coming Soon
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  <p>
+                    Powered by Z-AI technology with support for multiple AI models
+                  </p>
+                  <p>
+                    Generate code in 20+ programming languages with intelligent context awareness
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </TabsContent>
 
           <TabsContent value="admin" className="space-y-4">

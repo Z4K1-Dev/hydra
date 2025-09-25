@@ -1,0 +1,97 @@
+{
+  "discussion_template": {
+    "version": "1.0",
+    "metadata": {
+      "title": "Discussion Title",
+      "topic": "Main topic or theme",
+      "created": "YYYY-MM-DD HH:MM:SS",
+      "updated": "YYYY-MM-DD HH:MM:SS",
+      "author": "Author name",
+      "tags": ["tag1", "tag2", "tag3"],
+      "priority": "low|medium|high",
+      "status": "active|completed|archived",
+      "related_discussions": [],
+      "attachments": []
+    },
+    "context": {
+      "background": "Background information and context for this discussion",
+      "objectives": [
+        "Objective 1: What we want to achieve",
+        "Objective 2: Specific goals or outcomes"
+      ],
+      "constraints": [
+        "Constraint 1: Limitations or boundaries",
+        "Constraint 2: Technical or resource constraints"
+      ],
+      "participants": [
+        {
+          "role": "user",
+          "name": "User name",
+          "expertise": ["area1", "area2"]
+        },
+        {
+          "role": "assistant",
+          "name": "GLM AI",
+          "expertise": ["general", "technical", "analysis"]
+        }
+      ]
+    },
+    "system_prompt": "You are GLM, a helpful AI assistant. You are knowledgeable, friendly, and professional. Please provide accurate and useful information while maintaining a conversational tone.",
+    "messages": [
+      {
+        "id": "msg_001",
+        "timestamp": "YYYY-MM-DD HH:MM:SS",
+        "role": "system",
+        "content": "System message or initial instructions",
+        "tokens": 0,
+        "importance": "high"
+      },
+      {
+        "id": "msg_002",
+        "timestamp": "YYYY-MM-DD HH:MM:SS",
+        "role": "user",
+        "content": "User's initial question or statement",
+        "tokens": 0,
+        "importance": "high",
+        "category": "question|statement|request"
+      }
+    ],
+    "summary": {
+      "key_points": [
+        "Key point 1 from the discussion",
+        "Key point 2 from the discussion"
+      ],
+      "decisions": [
+        "Decision 1 made during discussion",
+        "Decision 2 made during discussion"
+      ],
+      "action_items": [
+        {
+          "task": "Action item 1",
+          "assigned_to": "responsible person",
+          "due_date": "YYYY-MM-DD",
+          "status": "pending|completed"
+        }
+      ],
+      "next_steps": [
+        "Next step 1 for follow-up",
+        "Next step 2 for continuation"
+      ]
+    },
+    "analysis": {
+      "total_messages": 0,
+      "total_tokens": 0,
+      "duration_minutes": 0,
+      "topics_discussed": [],
+      "sentiment": "positive|neutral|negative",
+      "complexity": "low|medium|high",
+      "resolution_status": "resolved|partial|ongoing"
+    },
+    "export_formats": {
+      "markdown": true,
+      "json": true,
+      "pdf": false,
+      "html": false
+    }
+  }
+}
